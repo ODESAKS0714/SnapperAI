@@ -914,11 +914,11 @@ def load_history_item(item):
 
 def capture_screenshot():
 
-    selector = ScreenshotSelector()
+    window.screenshot_selector = ScreenshotSelector()
 
-    selector.show()
-    selector.raise_()
-    selector.activateWindow()
+    window.screenshot_selector.show()
+    window.screenshot_selector.raise_()
+    window.screenshot_selector.activateWindow()
 
 
 # --------------------------------------------------
